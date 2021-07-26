@@ -1,0 +1,20 @@
+[
+    { "title":"Pancake", 
+      "recipe":{
+          "ingredients":["eggs","milk","flour"],
+          "instructions":["mix all ingredients","ensure that batter is smooth","cook untill bubbles"],
+          "appliances":["bowl","whisk","frying pan"]
+
+      },
+      "tag":"breakfast"
+    },
+    { "title":"malva", 
+        "recipe":{
+            "ingredients":["jam","eggs","milk","flour","sugar"],
+            "instructions":["Preheat oven ","mix all ingredients","ensure that batter is smooth","cook untill bubbles"],
+            "appliances":["deep pan","bowl","whisk","Oven"]
+  
+        },
+        "tag":"breakfast"
+      }
+]
