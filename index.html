@@ -13,11 +13,58 @@
 
 <body>
     <header>
-        <h1 class="center">Meal Shuffle</h1>
+        <h1 class="mx-auto">Meal Shuffle</h1>
     </header>
     <section>
         <div id= newRecipe>
-            
+            <form>
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="ftitle">Title:</label><br>
+                    <input type="text" id="ftitle" class="form-control" name="ftitle" value="">
+                                   
+                </div>
+
+                <div class="form-group mx-sm-3 mb-2">
+                    <label for="breakfastSelect">Tag</label>
+                    <select class="form-control" id="breakfastSelect">
+                      <option>Breakfast</option>
+                      <option>Lunch</option>
+                      <option>Dinner</option>
+                      <option>Side</option>
+                      <option>Dessert</option>
+                      <option>Snack</option>
+                    </select>
+                    
+                  </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="textArea">Ingredients:</label>
+                    <textarea class="form-control" id="textArea" rows="3"></textarea>
+                    <small id="passwordHelpBlock" class="form-text text-muted">
+                        Each Ingredient should be written on a new line.
+                    </small>
+                    
+                  </div>
+
+                  <div id="result"></div>
+
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="StepsTextarea1">Instructions:</label>
+                    <textarea class="form-control" id="StepsTextarea1" rows="3"></textarea>
+                    <small id="passwordHelpBlock" class="form-text text-muted">
+                        Each step should be written on a new line.
+                    </small>
+                  </div>
+
+                  <div class="form-group mx-sm-3 mb-2">
+                    <label for="appliTextarea1">Appliances:</label>
+                    <textarea class="form-control" id="appliTextarea1" rows="3"></textarea>
+                    <small id="passwordHelpBlock" class="form-text text-muted">
+                        Each item should be written on a new line.
+                    </small>
+                  </div>
+                  <input type="submit" onclick="textToArray()" value="Submit">
+                  <input class="btn btn-primary" type="submit" value="Submit">
+            </form>
         </div>
     </section>
     <section id="mainDis">
